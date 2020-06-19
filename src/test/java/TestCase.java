@@ -14,10 +14,12 @@ public class TestCase extends Runner{
         driver.get("http://localhost:8001/");
         Thread.sleep(3000);
         percy.snapshot("Percy - About Us");
+        driver.getTitle();
 
         //Thread.sleep(2000);
         driver.findElement(By.linkText("Contact Us!")).click();
         Thread.sleep(3000);
         percy.snapshot("Percy - Contact Us");
+        driver.getTitle();
     }
 }
