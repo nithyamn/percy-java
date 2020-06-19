@@ -1,9 +1,26 @@
 body{
 	background: url("sample2.jpg");
+	background: url("sample3.jpg");
 	background-size:cover;
 }
+.paragraph{
+	width: 70%;
+	margin:auto;
+	margin-top: 100px;
+	padding: 50px;
+	padding-top: 10px;
+	border-style: solid;
+	border-radius: 10px;
+	border-color: #af7a6d;
+	background: #fff;
+}
+.paragraph h2{
+	text-align: center;
+	padding-bottom: 5px;
+}
+
 .manage-width{
-	width: 50%;
+	width: 70%;
 	margin:auto;
 	margin-top: 100px;
 	padding: 50px;
@@ -29,4 +46,11 @@ p{
 	border-color: #28536b;
 	color: #fff;
 	text-transform: uppercase;
+}
+.underline{
+	background-color: #333;
+	width: 10%;
+	height: 2px;
+	margin: auto;
+	margin-bottom: 15px;
 }
