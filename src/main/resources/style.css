@@ -1,6 +1,5 @@
 body{
-	background: url("sample2.jpg");
-	background: url("sample3.jpg");
+	background: #2e294e;
 	background-size:cover;
 }
 .paragraph{
@@ -11,7 +10,7 @@ body{
 	padding-top: 10px;
 	border-style: solid;
 	border-radius: 10px;
-	border-color: #af7a6d;
+	border-color: #ffd400;
 	background: #fff;
 }
 .paragraph h2{
@@ -27,7 +26,7 @@ body{
 	padding-top: 10px;
 	border-style: solid;
 	border-radius: 10px;
-	border-color: #af7a6d;
+	border-color: #ffd400;
 	text-align: center;
 	background: #c1edcc;
 }
@@ -42,9 +41,9 @@ p{
 	padding: 20px;
 }
 .btn, #customBtnColor{
-	background-color: #28536b;
-	border-color: #28536b;
-	color: #fff;
+	background-color: #eadeda;
+	border-color: #eadeda;
+	color: #333;
 	text-transform: uppercase;
 }
 .underline{
