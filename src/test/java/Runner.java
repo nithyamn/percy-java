@@ -15,8 +15,8 @@ public class Runner {
     public WebDriver driver;
     private static ExecutorService serverExecutor;
     private static HttpServer server;
-    public static final String USERNAME = "nithyamani3";
-    public static final String AUTOMATE_KEY = "tnvzsrdzaKJQWhDaAVub";
+    public static final String USERNAME = System.getenv("BROWSERSTACK_USERNAME");
+    public static final String AUTOMATE_KEY = System.getenv("BROWSERSTACK_ACCESS_KEY");
     public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 
     @BeforeMethod
