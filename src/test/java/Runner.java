@@ -26,11 +26,9 @@ public class Runner {
         driver = new ChromeDriver();
 
         //Start localhost on port 8001
-        //serverExecutor = Executors.newFixedThreadPool(1);
-        //server = App.startServer(serverExecutor);
+        serverExecutor = Executors.newFixedThreadPool(1);
+        server = App.startServer(serverExecutor);
 
-        System.setProperty("webdriver.chrome.driver", "/Users/nithyamani/Desktop/chromedrivers/chromedriver83");
-        driver = new ChromeDriver();
 
         //Run tests on BrowserStack
         /*DesiredCapabilities caps = new DesiredCapabilities();
@@ -48,7 +46,7 @@ public class Runner {
     @AfterMethod
     public void tearDown(){
         driver.quit();
-        //server.stop(1);
-        //serverExecutor.shutdownNow();
+        server.stop(1);
+        serverExecutor.shutdownNow();
     }
 }
