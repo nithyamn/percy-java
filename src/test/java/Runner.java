@@ -22,15 +22,15 @@ public class Runner {
     @BeforeMethod
     public void setUp() throws IOException {
         //Run tests locally
-        //System.setProperty("webdriver.chrome.driver", "/Users/nithyamani/Desktop/chromedrivers/chromedriver83");
-        //driver = new ChromeDriver();
+        System.setProperty("webdriver.chrome.driver", "/Users/nithyamani/Desktop/chromedrivers/chromedriver83");
+        driver = new ChromeDriver();
 
         //Start localhost on port 8001
         serverExecutor = Executors.newFixedThreadPool(1);
         server = App.startServer(serverExecutor);
 
         //Run tests on BrowserStack
-        DesiredCapabilities caps = new DesiredCapabilities();
+        /*DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability("browser", "Chrome");
         caps.setCapability("browser_version", "81.0");
         caps.setCapability("os", "Windows");
@@ -39,7 +39,7 @@ public class Runner {
         caps.setCapability("name", "visual_test");
         caps.setCapability("browserstack.local", "true");
 
-        driver = new RemoteWebDriver(new URL(URL), caps);
+        driver = new RemoteWebDriver(new URL(URL), caps);*/
     }
 
     @AfterMethod
