@@ -20,7 +20,8 @@ public class TestCase extends Runner{
         //Thread.sleep(2000);
         driver.findElement(By.linkText("Contact Us!")).click();
         Thread.sleep(3000);
-        percy.snapshot("Percy - Contact Us", Arrays.asList(375, 768, 992, 1200));
+        percy.snapshot("Percy - Contact Us",  Arrays.asList(375, 768, 992, 1200));
+       
         driver.getTitle();
     }
 }
