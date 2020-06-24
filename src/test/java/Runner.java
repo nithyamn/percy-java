@@ -45,7 +45,7 @@ public class Runner {
     @AfterMethod
     public void tearDown(){
         driver.quit();
-        server.stop(1);
-        serverExecutor.shutdownNow();
+        //server.stop(1);
+        //serverExecutor.shutdownNow();
     }
 }
