@@ -1,5 +1,5 @@
 body{
-	background: #2e294e;
+	background: #aaefdf;
 	background-size:cover;
 }
 .paragraph{
@@ -41,8 +41,8 @@ p{
 	padding: 20px;
 }
 .btn, #customBtnColor{
-	background-color: #eadeda;
-	border-color: #eadeda;
+	background-color: #cffcff;
+	border-color: #cffcff;
 	color: #333;
 	text-transform: uppercase;
 }

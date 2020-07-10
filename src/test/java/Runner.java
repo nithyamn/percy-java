@@ -29,6 +29,7 @@ public class Runner {
         serverExecutor = Executors.newFixedThreadPool(1);
         server = App.startServer(serverExecutor);
 
+
         //Run tests on BrowserStack
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability("browser", "Chrome");
