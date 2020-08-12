@@ -38,7 +38,7 @@ public class Runner {
         caps.setCapability("os_version", "10");
         caps.setCapability("build", "Percy");
         caps.setCapability("name", "visual_test");
-        caps.setCapability("browserstack.local", "true");
+        //caps.setCapability("browserstack.local", "false");
 
         driver = new RemoteWebDriver(new URL(URL), caps);
     }
