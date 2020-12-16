@@ -31,6 +31,7 @@ public class Runner {
 
 
         //Run tests on BrowserStack
+<<<<<<< HEAD
 //        DesiredCapabilities caps = new DesiredCapabilities();
 //        caps.setCapability("browser", "Chrome");
 //        caps.setCapability("browser_version", "81.0");
@@ -41,6 +42,18 @@ public class Runner {
 //        caps.setCapability("browserstack.local", "true");
 //
 //        driver = new RemoteWebDriver(new URL(URL), caps);
+=======
+        DesiredCapabilities caps = new DesiredCapabilities();
+        caps.setCapability("browser", "Chrome");
+        caps.setCapability("browser_version", "81.0");
+        caps.setCapability("os", "Windows");
+        caps.setCapability("os_version", "10");
+        caps.setCapability("build", "Percy");
+        caps.setCapability("name", "visual_test");
+        //caps.setCapability("browserstack.local", "false");
+
+        driver = new RemoteWebDriver(new URL(URL), caps);
+>>>>>>> 1d9434e7a21e9529ebdce883965edb0475b18841
     }
 
     @AfterMethod
