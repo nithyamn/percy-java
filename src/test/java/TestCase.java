@@ -12,7 +12,7 @@ public class TestCase extends Runner{
         Percy percy = new Percy(driver);
         //driver.manage().timeouts().implicitlyWait(10000, TimeUnit.SECONDS);
 
-        driver.get("http://localhost:8001/");
+        driver.get("http://localhost/SampleWebsite/");
         Thread.sleep(3000);
         percy.snapshot("Percy - About Us", Arrays.asList(375, 768, 992, 1200));
         driver.getTitle();
